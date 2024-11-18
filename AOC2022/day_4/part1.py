@@ -1,4 +1,4 @@
-# task url: https://adventofcode.com/2022/day/3
+# task url: https://adventofcode.com/2022/day/4
 import re
 
 def read_input_file(file_path):
