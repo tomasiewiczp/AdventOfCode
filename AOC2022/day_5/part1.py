@@ -1,4 +1,4 @@
-# task url: https://adventofcode.com/2022/day/4
+# task url: https://adventofcode.com/2022/day/5
 import re
 from collections import deque
 
