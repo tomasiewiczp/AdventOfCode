@@ -3,7 +3,6 @@ from collections import Counter
 
 with open('input.txt', 'r') as file:
     lists = [tuple(map(int, line.strip().split())) for line in file]
-    left = [line[0] for line in lists]
-    right = Counter([line[1] for line in lists])
-    similarity_score = sum([num*right[num] for num in left])
+    right = Counter(right for _, right in lists)
+    similarity_score = sum(left * right[left] for left, _ in lists)
     print(similarity_score)
