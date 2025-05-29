@@ -32,5 +32,5 @@ for i in range(400):
     lines+=1
     lines = increase_adjacent(lines, np.empty((0, 2), dtype=int))
     if lines is None:
-        print(i)
+        print(i+1)
         break
