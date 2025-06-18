@@ -2,7 +2,6 @@
 from collections import namedtuple
 
 def calculate_flight(x_vel, y_vel, x,y):
-    y_max = y
     for _ in range(500):
         x += x_vel
         y += y_vel
@@ -17,7 +16,6 @@ def calculate_flight(x_vel, y_vel, x,y):
 
 Area = namedtuple('Area', ['xmin', 'xmax', 'ymin', 'ymax'])
 Area = Area(156,202,-110,-69)
-# Area = Area(20,30,-10,-5)
 counter = 0
 for x_vel in range(0, Area.xmax+1):
     for y_vel in range(Area.ymin, abs(Area.ymin)*2):  
